@@ -9,8 +9,8 @@ import time
 STOP_SCRIPT_KEY = keyboard.Key.f1
 PAUSE_SCRIPT_KEY = keyboard.Key.f2
 PATH_TO_TEMPLATES = "templates/"
-FIND_MATCH_THRESHOLD = 0.9
-FIND_ALL_MATCH_THRESHOLD = 0.95
+FIND_MATCH_THRESHOLD = 0.85
+FIND_ALL_MATCH_THRESHOLD = 0.97
 
 def find_match(template, threshold=FIND_MATCH_THRESHOLD):
     image = cv2.cvtColor(np.array(dialog.capture_as_image()), cv2.COLOR_RGB2GRAY)
